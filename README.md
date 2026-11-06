@@ -6,7 +6,7 @@ An end-to-end deep learning pipeline and interactive Streamlit application for m
 --- 
 ##  Dashboard Preview
 
-![Dashboard Preview](dashboard.png)
+![Dashboard Preview](Electricity Load Forecast & Anomaly Dashboard_page.jpg)
 
 ---
 
