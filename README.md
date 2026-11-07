@@ -38,3 +38,60 @@ energy-load-forecasting-anomaly-detection/
     ├── threshold.pkl                                   # Anomaly threshold boundary
     ├── metrics.csv                                     # Pre-computed client evaluation metrics
     └── sample_df.pkl                                   # Lightweight sample fallback data
+
+```
+
+---
+
+## Evaluation Metrics & Baselines
+
+The model performance is benchmarked directly against domain baselines to verify prediction quality:
+
+| Metric | Description |
+| --- | --- |
+| **`model_mae`** | Mean Absolute Error (kW) achieved by the trained sequence model |
+| **`yesterday_mae`** | Baseline MAE using load values from the exact same hour yesterday ($t-24$) |
+| **`last_week_mae`** | Baseline MAE using load values from the exact same hour last week ($t-168$) |
+| **`model_smape`** | Symmetric Mean Absolute Percentage Error of the forecast horizon |
+
+---
+
+## Quick Start & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/Adibshaikh2209/energy-load-forecasting-anomaly-detection.git](https://github.com/Adibshaikh2209/energy-load-forecasting-anomaly-detection.git)
+cd energy-load-forecasting-anomaly-detection
+
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+
+```
+
+### 3. Launch the Streamlit Dashboard
+
+```bash
+streamlit run app.py
+
+```
+
+Your default browser will automatically open `http://localhost:8501`.
+
+---
+
+## Dataset & Citation
+
+The dataset used in this project is sourced from the UCI Machine Learning Repository:
+
+> Trindade, A. (2015). *ElectricityLoadDiagrams20112014* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C58C86
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
