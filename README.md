@@ -1,3 +1,4 @@
+
 # Electricity Load Forecasting & Anomaly Detection Dashboard
 
 An end-to-end deep learning pipeline and interactive Streamlit application for multi-client 24-hour electricity load forecasting and statistical anomaly detection. Built on the **UCI ElectricityLoadDiagrams20112014** dataset, this project evaluates deep sequence models against domain-standard temporal baselines.
@@ -6,7 +7,7 @@ An end-to-end deep learning pipeline and interactive Streamlit application for m
 
 ## Dashboard Preview
 
-<img src="dashboard.jpg" width="100%" alt="Dashboard Preview">
+![Dashboard Preview](dashboard.jpg)
 
 ---
 
@@ -25,19 +26,12 @@ Accurate multi-step electricity load forecasting is critical for grid stability,
 
 ```text
 energy-load-forecasting-anomaly-detection/
-├── app.py                                              # Main Streamlit dashboard script
-├── Energy_forcasting.ipynb                             # Data preprocessing, training, and evaluation pipeline
-├── Electricity Load Forecast & Anomaly Dashboard_page.jpg  # Dashboard preview image
-├── requirements.txt                                    # Python package dependencies
-├── .gitignore                                          # Excludes raw data (>100MB) and log files
-├── LICENSE                                             # MIT License
-└── artifacts/                                          # Serialized model and evaluation artifacts
-    ├── model.keras                                     # Trained deep learning model
-    ├── scaler.pkl                                      # MinMaxScaler object
-    ├── client_cols.pkl                                 # List of client IDs
-    ├── threshold.pkl                                   # Anomaly threshold boundary
-    ├── metrics.csv                                     # Pre-computed client evaluation metrics
-    └── sample_df.pkl                                   # Lightweight sample fallback data
+├── app.py                   # Main Streamlit dashboard script
+├── Energy_forcasting.ipynb  # Data preprocessing, training, and evaluation pipeline
+├── dashboard.jpg            # Dashboard preview image
+├── requirements.txt         # Python package dependencies
+├── .gitignore               # Excludes raw dataset (>100MB) and generated artifacts
+└── LICENSE                  # MIT License
 
 ```
 
@@ -73,7 +67,11 @@ pip install -r requirements.txt
 
 ```
 
-### 3. Launch the Streamlit Dashboard
+### 3. Generate Model Artifacts
+
+Download the dataset from the UCI repository below and run `Energy_forcasting.ipynb` to train the model and generate the local `artifacts/` folder (`model.keras`, `scaler.pkl`, `client_cols.pkl`, `threshold.pkl`, `metrics.csv`, and `sample_df.pkl`).
+
+### 4. Launch the Streamlit Dashboard
 
 ```bash
 streamlit run app.py
@@ -84,7 +82,7 @@ Your default browser will automatically open `http://localhost:8501`.
 
 ---
 
-## Dataset & Citation
+##  Dataset & Citation
 
 The dataset used in this project is sourced from the UCI Machine Learning Repository:
 
@@ -92,6 +90,11 @@ The dataset used in this project is sourced from the UCI Machine Learning Reposi
 
 ---
 
-## License
+##  License
 
 This project is licensed under the **MIT License** — see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+
+```
+ without a 404 error.
+
+```
