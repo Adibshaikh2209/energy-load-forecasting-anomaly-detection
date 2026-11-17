@@ -93,8 +93,3 @@ The dataset used in this project is sourced from the UCI Machine Learning Reposi
 ##  License
 
 This project is licensed under the **MIT License** — see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-
-```
- without a 404 error.
-
-```
